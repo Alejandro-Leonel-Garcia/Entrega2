@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* reset de css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: rgba(128, 128, 128, 0.282);
+}
+
+/* Header menu hamburguesa y menú */
+.hamburguesa{
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+.navbar div button{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;    
+    padding: 10px 30px;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    margin: 20px ;   
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.menu :hover{        
+        color:yellow;        
+    }
+
+header nav ul li.sub-menu{
+    position: relative;
+}
+
+header nav ul li.sub-menu ul{
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    padding: 10px;    
+}
+
+header nav ul li.sub-menu ul li a{
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li.sub-menu ul li{
+    padding: 5px;    
+}
+
+header nav ul li.sub-menu:hover ul{
+    display: block;
+}
+
+/* Titulo de los encabezados */
+.encabezado{
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+.titulo{
+    display: grid;
+    width: 70%;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.656);
+    font-size: 40px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow:0 0 10px;
+    color: rgb(0, 0, 0);   
+    
+}
+
+.sub-titulo{
+    display: grid;
+    width: 60%;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.544);
+    font-size: 40px;
+    justify-content: center;
+    align-content: center; 
+    border-radius: 15px;
+    box-shadow:0 0 10px;
+    color: black;    
+}
+
+/* Fotos del index */
+.fotos{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px;     
+}
+
+.fotos div img{
+    border-radius: 10px;
+    box-shadow:0 0 10px;  
+}
+
+.fotos div{
+    display: grid;    
+    justify-content: center;
+    align-content: center;    
+}
+
+/* Imagen con superposicion del link html catalogos */
+section .grilla div{
+    position: relative;
+}
+
+section .grilla div img{
+    display: flex;
+    justify-self: center ;
+    border: solid 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    margin: 10px;
+}
+
+section .grilla div.uno:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.621);
+} 
+
+section .grilla div.dos:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.621);
+}
+
+section .grilla div.tres:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.621);
+}
+
+section div a.link{    
+    position: absolute;
+    color: brown;
+    bottom: 0;
+    left: 150PX;    
+    text-decoration: none;
+    margin: 10px;
+}
+
+section div a:hover{    
+    color: yellow;
+    font-size: 20px;
+}
+
+section div{
+    position: relative;
+}
+
+
+section div a{
+    position: absolute;
+    color: greenyellow;
+    bottom: 0;
+    left:calc(30%);
+    z-index: 2;
+    text-decoration: none;
+    margin: 5px;
+}
+
+section div a:hover{
+    color: yellow;
+    font-size: 20px;
+}
+
+/* Slider de html bombas con bootstrap */
+div.carousel-inner{
+    width: 20%;
+    height: 20%;
+    justify-self: center ;    
+}
+
+.carousel-control-prev{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+.carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+/* Card´s html servicios */
+.servi{
+    justify-self: center;
+}
+
+section div .card{
+    position: relative;
+}
+
+section div .card{
+    display: flex;
+    justify-self: center ;
+    border: solid 2px;    
+    margin: 10px;
+}
+
+section div .card.uno:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.225);
+} 
+
+section div .card.dos:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.225);
+}
+
+section div .card.tres:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(19, 9, 9, 0.225);
+}
+
+/* Fotter pie de pagina */
+.informacion{
+    display: grid;
+    background-color: aqua;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 10px;          
+} 
+
+    footer ul li{
+    list-style: none;
+}
+
+/* Slider de html perifericos con bootstrap */
+.texto{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.455);
+    font-size: 15px;
+}
+
+section div .card{
+    justify-self: center ;
+    border: solid 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    margin: 10px;
+    
+}
+
+/* Todos los html son responsivos */
+
+/* Media queries para tablet */
+@media(max-width: 991px){
+    .hamburguesa:hover{
+        position: relative;
+        font-size: 30px;
+        color: blueviolet;
+    }
+
+    .hamburguesa{
+        display: block;
+    }
+
+    .nav-link{        
+        font-size: 20px;
+        color:brown;
+    }
+
+    .navbar-nav{
+        position: absolute;        
+        background-color: rgb(241, 223, 223);        
+        height: 500px;
+        width: 300px;
+        left: -100px;
+        padding: 20px;
+        z-index: 2;
+        border-radius: 10px;
+        box-shadow:0 0 10px;                
+    }
+
+    .menu{
+        display: none;
+    }
+    .fotos{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+
+/* Media queries para movil */
+@media(max-width: 500px){
+    .hamburguesa{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .fotos{
+        height: 100%;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6 200);
+        margin: 20px 0px;
+    }
+    card-body{
+        justify-self: center;
+    }
+}
