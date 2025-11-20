@@ -18,6 +18,7 @@ body{
     color: white;
     font-size: 35px;
     display: none;
+    z-index: 4;
 }
 
 .navbar div button{
@@ -87,7 +88,7 @@ header nav ul li.sub-menu:hover ul{
     display: grid;
     width: 70%;
     height: 100px;
-    background-color: rgba(0, 0, 255, 0.656);
+    background-color: rgba(0, 0, 255, 0.551);
     font-size: 40px;
     justify-content: center;
     align-content: center;
@@ -102,7 +103,7 @@ header nav ul li.sub-menu:hover ul{
     display: grid;
     width: 60%;
     height: 100px;
-    background-color: rgba(0, 0, 255, 0.544);
+    background-color: rgba(0, 0, 255, 0.418);
     font-size: 40px;
     justify-content: center;
     align-content: center; 
@@ -277,9 +278,9 @@ section div .card.tres:hover::after{
 /* Fotter pie de pagina */
 .informacion{
     display: grid;
-    background-color: aqua;
+    background-color: black;
     font-size: 20px;
-    color: blue;
+    color: white;
     text-align: center;
     margin: 30px 0px;
     padding: 10px;          
@@ -359,7 +360,12 @@ section div .card{
         grid-template-rows: repeat(6 200);
         margin: 20px 0px;
     }
-    card-body{
-        justify-self: center;
+    
+    .titulo{
+        font-size: 30px;
+    }
+
+    .sub-titulo{
+        font-size: 30px;
     }
 }
